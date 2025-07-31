@@ -46,10 +46,10 @@ const ServicesSection = () => {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Card key={index} className="group cursor-pointer transform hover:scale-105">
-                <CardHeader className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-smooth">
-                    <IconComponent className="w-8 h-8 text-primary" />
+                <Card key={index} className="group cursor-pointer transform hover:scale-105 hover:shadow-strong">
+                  <CardHeader className="text-center">
+                    <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 group-hover:shadow-glow transition-smooth">
+                      <IconComponent className="w-8 h-8 text-primary group-hover:text-primary-dark" />
                   </div>
                   <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
                   <CardDescription className="text-base">
@@ -60,7 +60,7 @@ const ServicesSection = () => {
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
-                        <div className="w-2 h-2 bg-success rounded-full mr-3"></div>
+                        <div className="w-2 h-2 bg-success rounded-full mr-3 group-hover:bg-warning transition-smooth"></div>
                         {feature}
                       </li>
                     ))}

@@ -63,19 +63,19 @@ const AboutSection = () => {
               <h3 className="text-2xl font-semibold mb-6 text-foreground">Metodologia Diferenciada:</h3>
               <ul className="space-y-3">
                 <li className="flex items-center">
-                  <div className="w-3 h-3 bg-success rounded-full mr-4"></div>
+                  <div className="w-3 h-3 bg-success rounded-full mr-4 shadow-soft"></div>
                   <span className="text-muted-foreground">Diagnóstico inicial das dificuldades</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-3 h-3 bg-success rounded-full mr-4"></div>
+                  <div className="w-3 h-3 bg-success rounded-full mr-4 shadow-soft"></div>
                   <span className="text-muted-foreground">Plano de ensino personalizado</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-3 h-3 bg-success rounded-full mr-4"></div>
+                  <div className="w-3 h-3 bg-success rounded-full mr-4 shadow-soft"></div>
                   <span className="text-muted-foreground">Acompanhamento contínuo do progresso</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-3 h-3 bg-success rounded-full mr-4"></div>
+                  <div className="w-3 h-3 bg-success rounded-full mr-4 shadow-soft"></div>
                   <span className="text-muted-foreground">Comunicação constante com pais</span>
                 </li>
               </ul>
@@ -87,12 +87,12 @@ const AboutSection = () => {
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
-                <Card key={index} className="text-center p-6 hover:scale-105 transform">
+                <Card key={index} className="text-center p-6 hover:scale-105 transform hover:shadow-strong bg-gradient-accent">
                   <CardContent className="p-0">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                      <IconComponent className="w-8 h-8 text-primary" />
+                    <div className="w-16 h-16 mx-auto mb-4 bg-primary/15 rounded-full flex items-center justify-center shadow-soft">
+                      <IconComponent className="w-8 h-8 text-primary-dark" />
                     </div>
-                    <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
+                    <div className="text-3xl font-bold text-primary-dark mb-2">{stat.value}</div>
                     <div className="font-semibold text-foreground mb-1">{stat.label}</div>
                     <div className="text-sm text-muted-foreground">{stat.description}</div>
                   </CardContent>

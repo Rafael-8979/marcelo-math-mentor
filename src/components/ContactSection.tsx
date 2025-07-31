@@ -19,7 +19,7 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Main Contact Card */}
           <div className="lg:col-span-2">
-            <Card className="bg-primary-foreground/95 backdrop-blur-sm">
+            <Card className="bg-primary-foreground/95 backdrop-blur-sm shadow-strong">
               <CardHeader className="text-center">
                 <CardTitle className="text-3xl text-primary">
                   Primeira Aula Gratuita!
@@ -35,11 +35,11 @@ const ContactSection = () => {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="hero" size="lg" className="flex-1">
+                  <Button variant="hero" size="lg" className="flex-1 shadow-strong">
                     <Phone className="w-5 h-5 mr-2" />
                     Ligar Agora
                   </Button>
-                  <Button variant="success" size="lg" className="flex-1">
+                  <Button variant="success" size="lg" className="flex-1 shadow-glow">
                     <MessageCircle className="w-5 h-5 mr-2" />
                     WhatsApp
                   </Button>
@@ -56,7 +56,7 @@ const ContactSection = () => {
 
           {/* Contact Info */}
           <div className="space-y-6">
-            <Card className="bg-primary-foreground/95 backdrop-blur-sm">
+            <Card className="bg-primary-foreground/95 backdrop-blur-sm shadow-glow">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Phone className="w-6 h-6 text-primary mr-3" />
@@ -92,7 +92,7 @@ const ContactSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-primary-foreground/95 backdrop-blur-sm">
+            <Card className="bg-primary-foreground/95 backdrop-blur-sm shadow-soft">
               <CardContent className="p-6 text-center">
                 <h3 className="font-semibold mb-3">Benefícios Exclusivos</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">

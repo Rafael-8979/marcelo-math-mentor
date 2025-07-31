@@ -8,108 +8,78 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 20% 98%;
-    --foreground: 215 25% 12%;
+    /* Dark theme - elegant and professional */
+    --background: 220 15% 8%;
+    --foreground: 210 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 12%;
+    --card: 220 15% 10%;
+    --card-foreground: 210 20% 92%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 12%;
+    --popover: 220 15% 12%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 214 84% 32%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 210 75% 45%;
-    --primary-dark: 216 88% 25%;
+    /* Primary - bright blue for dark theme */
+    --primary: 210 85% 65%;
+    --primary-foreground: 220 15% 8%;
+    --primary-glow: 210 100% 75%;
+    --primary-dark: 210 85% 55%;
 
-    --secondary: 170 25% 95%;
-    --secondary-foreground: 215 25% 12%;
+    /* Secondary - subtle dark with hint of color */
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 210 20% 85%;
 
-    --muted: 220 15% 95%;
-    --muted-foreground: 215 15% 45%;
+    /* Muted - darker grays */
+    --muted: 220 15% 12%;
+    --muted-foreground: 210 10% 60%;
 
-    --accent: 168 60% 88%;
-    --accent-foreground: 215 25% 12%;
+    /* Accent - warm accent for dark theme */
+    --accent: 25 85% 55%;
+    --accent-foreground: 220 15% 8%;
 
-    --success: 160 70% 38%;
-    --success-foreground: 0 0% 100%;
-    --success-light: 160 45% 85%;
+    /* Status colors optimized for dark theme */
+    --success: 145 70% 55%;
+    --success-foreground: 220 15% 8%;
+    --success-light: 145 50% 20%;
 
-    --warning: 35 85% 55%;
-    --warning-foreground: 0 0% 100%;
+    --warning: 45 95% 65%;
+    --warning-foreground: 220 15% 8%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 85% 65%;
+    --destructive-foreground: 220 15% 8%;
 
-    --border: 220 13% 88%;
-    --input: 220 13% 88%;
-    --ring: 214 84% 32%;
+    /* Borders and inputs for dark theme */
+    --border: 220 15% 18%;
+    --input: 220 15% 16%;
+    --ring: 210 85% 65%;
 
-    /* Enhanced design tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(214, 84%, 32%), hsl(160, 70%, 38%), hsl(210, 75%, 45%));
-    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(220, 20%, 98%));
-    --gradient-accent: linear-gradient(135deg, hsl(168, 60%, 88%), hsl(170, 25%, 95%));
-    --shadow-soft: 0 4px 20px hsl(214, 84%, 32%, 0.08);
-    --shadow-glow: 0 8px 40px hsl(210, 75%, 45%, 0.15);
-    --shadow-strong: 0 10px 50px hsl(214, 84%, 32%, 0.2);
+    /* Dark theme enhanced design tokens */
+    --gradient-hero: linear-gradient(135deg, 
+      hsla(220, 15%, 2%, 0.85) 0%, 
+      hsla(220, 15%, 5%, 0.80) 30%, 
+      hsla(220, 15%, 8%, 0.75) 70%, 
+      hsla(220, 15%, 2%, 0.85) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220, 15%, 12%) 0%, hsl(220, 15%, 8%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(25, 85%, 55%) 0%, hsl(45, 95%, 65%) 100%);
+    --gradient-hero-text: linear-gradient(135deg, hsl(210, 100%, 70%) 0%, hsl(195, 100%, 60%) 100%);
+    --shadow-soft: 0 4px 20px hsl(220, 15%, 2%, 0.4);
+    --shadow-glow: 0 8px 40px hsl(210, 85%, 65%, 0.25);
+    --shadow-strong: 0 10px 50px hsl(220, 15%, 2%, 0.6);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar colors for dark theme */
+    --sidebar-background: 220 15% 6%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 210 85% 65%;
+    --sidebar-primary-foreground: 220 15% 8%;
+    --sidebar-accent: 220 15% 12%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 220 15% 15%;
+    --sidebar-ring: 210 85% 65%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+  /* Remove .dark class since we're using dark theme as default */
 }
 
 @layer base {

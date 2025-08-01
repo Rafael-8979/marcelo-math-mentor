@@ -88,7 +88,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-30 container mx-auto px-6 text-center text-white">
+      <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight font-display text-white drop-shadow-lg">
             Professor
@@ -128,7 +128,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 text-white animate-bounce">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 text-white animate-bounce">
         <div className="w-8 h-12 border-2 border-white/90 rounded-full flex justify-center backdrop-blur-md bg-white/20 shadow-lg">
           <div className="w-1.5 h-4 bg-white rounded-full mt-2 animate-pulse shadow-sm"></div>
         </div>

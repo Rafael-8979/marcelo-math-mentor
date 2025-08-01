@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Methods = () => {
   const whatsappNumber = "5515981364458"; // Número no formato internacional
-  const whatsappMessage = "Olá! Gostaria de conhecer mais sobre a metodologia de ensino e agendar uma aula gratuita.";
+  const whatsappMessage = "Olá! Gostaria de conhecer mais sobre a metodologia de ensino e agendar uma aula.";
   
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
   const phoneLink = `tel:+${whatsappNumber}`;
@@ -170,7 +170,7 @@ const Methods = () => {
             Pronto para Começar?
           </h2>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Agende uma aula gratuita e veja na prática como a metodologia pode 
+            Agende uma aula e veja na prática como a metodologia pode 
             transformar a relação do seu filho com a matemática.
           </p>
 

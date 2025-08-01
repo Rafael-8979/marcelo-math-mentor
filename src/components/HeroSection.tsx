@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-math.jpg";
 
 const HeroSection = () => {
   const whatsappNumber = "5515981364458";
-  const whatsappMessage = "Olá! Gostaria de agendar uma aula gratuita de matemática.";
+  const whatsappMessage = "Olá! Gostaria de agendar uma aula de matemática.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
@@ -114,7 +114,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <Button variant="default" size="lg" className="text-lg px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
-                Agendar Aula Gratuita
+                Agendar Aula
               </Button>
             </a>
             <Link to="/methods">

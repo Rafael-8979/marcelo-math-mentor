@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   const whatsappNumber = "5515981364458";
-  const whatsappMessage = "Olá! Gostaria de agendar uma aula gratuita de matemática.";
+  const whatsappMessage = "Olá! Gostaria de agendar uma aula de matemática.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
   const phoneLink = `tel:+${whatsappNumber}`;
 
@@ -16,7 +16,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Agende Sua Aula Gratuita
+            Agende Sua Aula
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Entre em contato e descubra como posso ajudar seu filho a alcançar 
@@ -30,7 +30,7 @@ const ContactSection = () => {
             <Card className="bg-card/95 backdrop-blur-sm shadow-strong border-border">
               <CardHeader className="text-center">
                 <CardTitle className="text-3xl text-primary">
-                  Primeira Aula Gratuita!
+                  Primeira Aula!
                 </CardTitle>
                 <CardDescription className="text-lg text-card-foreground/80">
                   Conheça a metodologia e veja como posso ajudar seu filho

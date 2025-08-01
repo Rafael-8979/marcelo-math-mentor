@@ -112,7 +112,7 @@ const HeroSection = () => {
             e métodos inovadores para cada aluno alcançar seu máximo potencial.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 sm:mb-0">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <Button variant="default" size="lg" className="text-lg px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
                 Agendar Aula

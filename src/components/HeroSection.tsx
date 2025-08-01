@@ -9,14 +9,82 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        {/* Stronger dark overlay for better contrast */}
-        <div className="absolute inset-0 bg-gradient-hero"></div>
-        <div className="absolute inset-0 bg-black/40"></div>
+      {/* Chalkboard Background */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-black to-gray-950">
+        {/* Chalkboard texture overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-green-950/30 via-gray-950/50 to-black/80"></div>
+        
+        {/* Chalkboard Math Background - Hand-drawn style */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-15 blur-[1px]">
+          {/* Mathematical formulas scattered like chalk on blackboard */}
+          <div className="absolute top-16 left-8 text-gray-300/80 text-lg font-mono transform -rotate-12 drop-shadow-sm">
+            ∫ f(x)dx
+          </div>
+          <div className="absolute top-32 right-12 text-gray-200/70 text-xl font-mono transform rotate-6 drop-shadow-sm">
+            x = (-b ± √(b²-4ac))/2a
+          </div>
+          <div className="absolute top-48 left-1/4 text-gray-300/90 text-2xl font-bold transform -rotate-6 drop-shadow-sm">
+            π ≈ 3.14159
+          </div>
+          <div className="absolute bottom-40 right-1/4 text-gray-200/75 text-lg font-mono transform rotate-12 drop-shadow-sm">
+            lim(x→∞) 1/x = 0
+          </div>
+          <div className="absolute bottom-24 left-16 text-gray-300/85 text-xl transform -rotate-8 drop-shadow-sm">
+            sin²θ + cos²θ = 1
+          </div>
+          <div className="absolute top-64 right-8 text-gray-200/65 text-base font-mono transform rotate-15 drop-shadow-sm">
+            d/dx(x²) = 2x
+          </div>
+          <div className="absolute bottom-56 left-1/3 text-gray-300/75 text-lg transform rotate-8 drop-shadow-sm">
+            E = mc²
+          </div>
+          <div className="absolute top-28 left-2/3 text-gray-200/70 text-base font-mono transform -rotate-10 drop-shadow-sm">
+            log₂(8) = 3
+          </div>
+          
+          {/* Geometric shapes and symbols */}
+          <div className="absolute top-20 right-1/3 text-gray-300/60 text-4xl transform rotate-45 drop-shadow-sm">
+            △
+          </div>
+          <div className="absolute bottom-32 left-8 text-gray-200/70 text-3xl transform -rotate-12 drop-shadow-sm">
+            ∑
+          </div>
+          <div className="absolute top-44 left-12 text-gray-300/50 text-2xl transform rotate-20 drop-shadow-sm">
+            ∝
+          </div>
+          <div className="absolute bottom-16 right-20 text-gray-200/80 text-xl transform -rotate-6 drop-shadow-sm">
+            ∀x ∈ ℝ
+          </div>
+          <div className="absolute top-72 right-1/4 text-gray-300/60 text-lg transform rotate-14 drop-shadow-sm">
+            f'(x) = df/dx
+          </div>
+          
+          {/* Hand-drawn style lines and arrows */}
+          <div className="absolute top-40 left-20 w-24 h-px bg-gray-300/40 transform rotate-12 shadow-sm"></div>
+          <div className="absolute bottom-48 right-16 w-20 h-px bg-gray-200/50 transform -rotate-8 shadow-sm"></div>
+          
+          {/* More scattered formulas for authentic chalkboard feel */}
+          <div className="absolute top-8 left-1/2 text-gray-300/40 text-sm font-mono transform rotate-18 drop-shadow-sm">
+            √(a² + b²)
+          </div>
+          <div className="absolute bottom-8 left-1/2 text-gray-200/50 text-base transform -rotate-15 drop-shadow-sm">
+            Δy/Δx → dy/dx
+          </div>
+          <div className="absolute top-56 left-4 text-gray-300/70 text-lg transform rotate-25 drop-shadow-sm">
+            ∞ > n ∀n ∈ ℕ
+          </div>
+          <div className="absolute bottom-64 right-4 text-gray-200/60 text-base font-mono transform -rotate-20 drop-shadow-sm">
+            (a+b)² = a²+2ab+b²
+          </div>
+          
+          {/* Additional chalk dust effect */}
+          <div className="absolute top-1/3 left-1/2 text-gray-400/30 text-xs transform rotate-45 drop-shadow-sm">
+            ∂f/∂x
+          </div>
+          <div className="absolute bottom-1/3 right-1/3 text-gray-300/35 text-sm transform -rotate-30 drop-shadow-sm">
+            ∅ ⊂ A
+          </div>
+        </div>
       </div>
 
       {/* Content */}

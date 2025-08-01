@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-green-950/30 via-gray-950/50 to-black/80"></div>
         
         {/* Chalkboard Math Background - Hand-drawn style */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-15 blur-[1px]">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-25 blur-[0.5px]">
           {/* Mathematical formulas scattered like chalk on blackboard */}
           <div className="absolute top-16 left-8 text-gray-300/80 text-lg font-mono transform -rotate-12 drop-shadow-sm">
             ∫ f(x)dx

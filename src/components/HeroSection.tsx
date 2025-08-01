@@ -97,7 +97,8 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed drop-shadow-md">
-            Especialista em Matemática do 3° ao 9° ano
+            Especialista em Matemática<br />
+            do 3° ao 9° ano
           </p>
           
           <div className="text-lg md:text-xl mb-8 text-gray-200/90 font-medium">

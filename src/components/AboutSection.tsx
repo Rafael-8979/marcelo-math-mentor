@@ -95,13 +95,13 @@ const AboutSection = () => {
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
-                <Card key={index} className="text-center p-6 hover:scale-105 transform hover:shadow-strong bg-gradient-purple border border-primary/20">
+                <Card key={index} className="text-center p-8 hover:scale-105 transform hover:shadow-strong bg-gradient-purple border border-primary/20">
                   <CardContent className="p-0">
                     <div className="w-16 h-16 mx-auto mb-4 bg-primary/20 rounded-full flex items-center justify-center shadow-glow">
                       <IconComponent className="w-8 h-8 text-primary" />
                     </div>
-                    <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
-                    <div className="font-semibold text-gray-100 mb-1">{stat.label}</div>
+                    <div className={`text-3xl font-bold text-primary mb-3 ${stat.value === "3° ao 9°" ? "whitespace-nowrap leading-tight" : ""}`}>{stat.value}</div>
+                    <div className="font-semibold text-gray-100 mb-2">{stat.label}</div>
                     <div className="text-sm text-gray-300">{stat.description}</div>
                   </CardContent>
                 </Card>

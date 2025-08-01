@@ -26,6 +26,12 @@ const HeroSection = () => {
           <p className="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed drop-shadow-md">
             Especialista em Matemática do 3° ao 9° ano
           </p>
+          
+          <div className="text-lg md:text-xl mb-8 text-gray-200/90 font-medium">
+            <span className="inline-block mx-2">📚 Reforço Escolar</span>
+            <span className="inline-block mx-2">📝 Preparação para Provas</span>
+            <span className="inline-block mx-2">🔄 Recuperação de Conteúdo</span>
+          </div>
 
           <p className="text-lg md:text-xl mb-10 text-gray-200 max-w-2xl mx-auto drop-shadow-sm">
             Transformo dificuldades em conquistas através de um ensino personalizado 

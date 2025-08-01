@@ -23,7 +23,7 @@ const AboutSection = () => {
     },
     {
       icon: TrendingUp,
-      value: "3°-9°",
+      value: "3° ao 9°",
       label: "Especialização",
       description: "Anos do ensino fundamental"
     }
@@ -78,6 +78,14 @@ const AboutSection = () => {
                   <div className="w-3 h-3 bg-success rounded-full mr-4 shadow-soft"></div>
                   <span className="text-muted-foreground">Comunicação constante com pais</span>
                 </li>
+                <li className="flex items-center">
+                  <div className="w-3 h-3 bg-success rounded-full mr-4 shadow-soft"></div>
+                  <span className="text-muted-foreground">Preparação específica para provas</span>
+                </li>
+                <li className="flex items-center">
+                  <div className="w-3 h-3 bg-success rounded-full mr-4 shadow-soft"></div>
+                  <span className="text-muted-foreground">Recuperação de conteúdos defasados</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -87,14 +95,14 @@ const AboutSection = () => {
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
-                <Card key={index} className="text-center p-6 hover:scale-105 transform hover:shadow-strong bg-gradient-accent">
+                <Card key={index} className="text-center p-6 hover:scale-105 transform hover:shadow-strong bg-gradient-purple border border-primary/20">
                   <CardContent className="p-0">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-primary/15 rounded-full flex items-center justify-center shadow-soft">
-                      <IconComponent className="w-8 h-8 text-primary-dark" />
+                    <div className="w-16 h-16 mx-auto mb-4 bg-primary/20 rounded-full flex items-center justify-center shadow-glow">
+                      <IconComponent className="w-8 h-8 text-primary" />
                     </div>
-                    <div className="text-3xl font-bold text-primary-dark mb-2">{stat.value}</div>
-                    <div className="font-semibold text-foreground mb-1">{stat.label}</div>
-                    <div className="text-sm text-muted-foreground">{stat.description}</div>
+                    <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
+                    <div className="font-semibold text-gray-100 mb-1">{stat.label}</div>
+                    <div className="text-sm text-gray-300">{stat.description}</div>
                   </CardContent>
                 </Card>
               );

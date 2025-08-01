@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Target, Clock, Users } from "lucide-react";
+import { BookOpen, Target, Clock, Users, RefreshCw } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
@@ -14,6 +14,12 @@ const ServicesSection = () => {
       title: "Preparação para Provas",
       description: "Preparação intensiva e estratégica para avaliações escolares, vestibulares e concursos.",
       features: ["Simulados práticos", "Técnicas de resolução", "Gestão de tempo"]
+    },
+    {
+      icon: RefreshCw,
+      title: "Recuperação de Conteúdo",
+      description: "Revisão completa de conteúdos fundamentais perdidos, garantindo base sólida para novos aprendizados.",
+      features: ["Diagnóstico de lacunas", "Revisão estruturada", "Nivelamento adequado"]
     },
     {
       icon: Users,
@@ -42,7 +48,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (

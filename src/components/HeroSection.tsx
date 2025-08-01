@@ -71,7 +71,7 @@ const HeroSection = () => {
             Δy/Δx → dy/dx
           </div>
           <div className="absolute top-56 left-4 text-gray-300/70 text-lg transform rotate-25 drop-shadow-sm">
-            ∞ > n ∀n ∈ ℕ
+            ∞ &gt; n ∀n ∈ ℕ
           </div>
           <div className="absolute bottom-64 right-4 text-gray-200/60 text-base font-mono transform -rotate-20 drop-shadow-sm">
             (a+b)² = a²+2ab+b²

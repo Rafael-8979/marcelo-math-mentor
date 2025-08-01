@@ -24,8 +24,8 @@ const AboutSection = () => {
     {
       icon: TrendingUp,
       value: "3° ao 9°",
-      label: "Especialização",
-      description: "Anos do ensino fundamental"
+      label: "Anos do ensino fundamental",
+      description: ""
     }
   ];
 

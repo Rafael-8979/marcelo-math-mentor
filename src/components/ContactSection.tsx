@@ -3,6 +3,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
+  const whatsappNumber = "5515981364458";
+  const whatsappMessage = "Olá! Gostaria de agendar uma aula gratuita de matemática.";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  const phoneLink = `tel:+${whatsappNumber}`;
+
   return (
     <section className="py-20 bg-gradient-to-br from-background via-muted to-background relative">
       {/* Background overlay for better visual appeal */}
@@ -38,14 +43,18 @@ const ContactSection = () => {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow">
-                    <Phone className="w-5 h-5 mr-2" />
-                    Ligar Agora
-                  </Button>
-                  <Button size="lg" className="flex-1 bg-success hover:bg-success/90 text-success-foreground shadow-glow">
-                    <MessageCircle className="w-5 h-5 mr-2" />
-                    WhatsApp
-                  </Button>
+                  <a href={phoneLink} className="flex-1">
+                    <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow">
+                      <Phone className="w-5 h-5 mr-2" />
+                      Ligar Agora
+                    </Button>
+                  </a>
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <Button size="lg" className="w-full bg-success hover:bg-success/90 text-success-foreground shadow-glow">
+                      <MessageCircle className="w-5 h-5 mr-2" />
+                      WhatsApp
+                    </Button>
+                  </a>
                 </div>
 
                 <div className="text-center pt-4">
@@ -65,7 +74,7 @@ const ContactSection = () => {
                   <Phone className="w-6 h-6 text-primary mr-3" />
                   <div>
                     <p className="font-semibold text-card-foreground">Telefone</p>
-                    <p className="text-card-foreground/70">(11) 99999-9999</p>
+                    <p className="text-card-foreground/70">(15) 98136-4458</p>
                   </div>
                 </div>
                 
@@ -73,7 +82,7 @@ const ContactSection = () => {
                   <Mail className="w-6 h-6 text-primary mr-3" />
                   <div>
                     <p className="font-semibold text-card-foreground">E-mail</p>
-                    <p className="text-card-foreground/70">marcelo@professor.com</p>
+                    <p className="text-card-foreground/70">marcelomelenchon5@gmail.com</p>
                   </div>
                 </div>
                 

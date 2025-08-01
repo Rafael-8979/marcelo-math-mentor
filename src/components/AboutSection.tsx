@@ -5,13 +5,13 @@ const AboutSection = () => {
   const stats = [
     {
       icon: GraduationCap,
-      value: "7",
+      value: "2",
       label: "Anos de Experiência",
       description: "Dedicados ao ensino de matemática"
     },
     {
       icon: Users,
-      value: "200+",
+      value: "30+",
       label: "Alunos Atendidos",
       description: "Com resultados comprovados"
     },
